@@ -1,5 +1,5 @@
 # Onmyoji-X-Arduino
-A hardware helper using **Arduino UNO R3** combined with CLI for the award winning game **[Onmyoji](https://en.onmyojigame.com/)**.
+A hardware helper using **Arduino UNO R3** combined with CLI for the award winning game **[Onmyoji](https://en.onmyojigame.com/)** on smartphones.
 
 This Java program controls the micro servo on Arduino board via **jSerialComm** library, recognizes the game status as win/lose at the end of each turn and automatically taps screen to continue playing the next turn when you win the previous turn. If the program fails to find a match for win or lose after a certain period, it'll keep listening for another 30 secs and finally terminates if no match found.
 
@@ -25,8 +25,8 @@ Quicktime Player
  3. Access the OpenCV-3.4.1 directory in terminal, type commands:
  
  ```
-        mkdir build
-        cd build
+    mkdir build
+    cd build
  ```
  4. Open CMake GUI
      - Set full path to OpenCV source code, e.g. /home/user/opencv
