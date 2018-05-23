@@ -7,21 +7,6 @@
  *  - jSerialComm-2.0.2
  *  - opencv-3.4.1 w/ extra modules (xfeatures2d)
  */
-
-/*
- *  - instructions for opencv installation (Apache Ant, CMake required):
- *      - download opencv extended modules from official Git repo
- *      - open CMake GUI
- *          -> configure -> find name 'OPENCV_EXTRA_MODULES_PATH'
- *          -> set value to your extra modules directory (e.g. '/Users/../opencv-3.4.1/extra_modules/modules')
- *          -> configure -> generate -> done
- * Software:
- *  - Quicktime Player
- * Hardware:
- *  - Arduino UNO R3
- *  - a micro servo
- *  - a stylus pen
- */
 package OnmyojiHelper;
 
 import com.fazecast.jSerialComm.*;
