@@ -7,7 +7,7 @@
  *  - jSerialComm-2.0.2
  *  - opencv-3.4.1 w/ extra modules (xfeatures2d)
  */
-package OnmyojiHelper;
+package OnmyojiHelper.java;
 
 import com.fazecast.jSerialComm.*;
 import java.io.IOException;
@@ -34,7 +34,6 @@ public class ThreadEx extends Thread {
             System.err.println("Failed to open port: "+e);
             return;
         }
-
     }
 
 

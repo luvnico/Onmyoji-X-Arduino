@@ -1,4 +1,4 @@
-package OnmyojiHelper;
+package OnmyojiHelper.java;
 
 import java.awt.AWTException;
 import java.awt.Rectangle;
