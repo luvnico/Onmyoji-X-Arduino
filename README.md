@@ -22,7 +22,13 @@ Quicktime Player
  ## OpenCV Installation Guide
  1. Install dependencies (Apache Ant, CMake required)
  2. Download opencv extended modules from official Git repo
- 3. Open CMake GUI
+ 3. Access the OpenCV-3.4.1 directory in terminal, type commands:
+ 
+ ```
+        mkdir build
+        cd build
+ ```
+ 4. Open CMake GUI
      - Set full path to OpenCV source code, e.g. /home/user/opencv
      - Set full path to <cmake_build_dir>, e.g. /home/user/opencv/build
      - Click 'configure' 
@@ -31,11 +37,9 @@ Quicktime Player
      - Click 'configure' 
      - Click 'generate' 
      - Done
- 4. Access the OpenCV-3.4.1 directory in terminal, type commands:
+ 5. Stay under the OpenCV-3.4.1/build directory in terminal, type commands:
  
      ```
-        mkdir build
-        cd build
         make -j8 # runs 8 jobs in parallel
         sudo make install
      ```
