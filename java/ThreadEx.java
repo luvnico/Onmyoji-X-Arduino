@@ -32,7 +32,7 @@ public class ThreadEx extends Thread {
             oStream = port.getOutputStream();
         }catch(Exception e){
             System.err.println("Failed to open port: "+e);
-            return;
+            currentThread().interrupt();
         }
     }
 

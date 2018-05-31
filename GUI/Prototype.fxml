@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.33583489681050654" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OnmyojiHelper.GUI.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="335.0" prefWidth="164.0">
+         <children>
+            <Button fx:id="start_btn" layoutX="26.0" layoutY="275.0" mnemonicParsing="false" onAction="#start_task" text="开始" />
+            <Slider fx:id="ps" layoutX="20.0" layoutY="96.0" />
+            <Label layoutX="22.0" layoutY="69.0" text="每局间隔" />
+            <ChoiceBox id="mode" fx:id="mode_box" layoutX="68.0" layoutY="20.0" onAction="#updateMode" prefHeight="27.0" prefWidth="98.0" />
+            <Slider fx:id="rs" layoutX="20.0" layoutY="155.0" />
+            <Label layoutX="22.0" layoutY="130.0" text="局数" />
+            <TextField fx:id="p" layoutX="89.0" layoutY="64.0" prefHeight="27.0" prefWidth="43.0" />
+            <Text layoutX="136.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="秒" />
+            <TextField fx:id="r" layoutX="89.0" layoutY="125.0" prefHeight="27.0" prefWidth="42.0" />
+            <Text layoutX="134.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="局" />
+            <Button fx:id="stop_btn" layoutX="109.0" layoutY="275.0" mnemonicParsing="false" onAction="#stop_task" text="停止" />
+            <Label layoutX="11.0" layoutY="25.0" text="选择模式" />
+            <Text layoutX="136.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="秒" />
+            <TextField fx:id="t" layoutX="89.0" layoutY="184.0" prefHeight="27.0" prefWidth="43.0" />
+            <Label layoutX="22.0" layoutY="189.0" text="超时检测" />
+            <Slider fx:id="ts" layoutX="20.0" layoutY="216.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="330.0">
+         <children>
+            <TextField id="log" fx:id="log" alignment="TOP_LEFT" layoutX="25.0" layoutY="208.0" prefHeight="99.0" prefWidth="310.0" />
+            <Label layoutX="22.0" layoutY="183.0" text="运行日志" />
+            <ToggleButton fx:id="port_conn_btn" focusTraversable="false" layoutX="84.0" layoutY="63.0" mnemonicParsing="false" onAction="#connect" text="连接Arduino" />
+            <Accordion layoutX="56.0" layoutY="80.0" />
+            <ProgressBar id="progress_bar" fx:id="bar" layoutX="86.0" layoutY="150.0" prefHeight="20.0" prefWidth="240.0" progress="0.0" />
+            <Text layoutX="22.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="当前进度" />
+            <ChoiceBox id="port" fx:id="port_box" layoutX="82.0" layoutY="20.0" prefHeight="27.0" prefWidth="240.0" />
+            <CheckBox fx:id="finish_alert" layoutX="235.0" layoutY="110.0" mnemonicParsing="false" text="结束提示音" />
+            <CheckBox fx:id="terminate_alert" layoutX="77.0" layoutY="110.0" mnemonicParsing="false" text="中断提示音" />
+            <Label layoutX="21.0" layoutY="25.0" text="选择端口" />
+            <Button layoutX="247.0" layoutY="63.0" mnemonicParsing="false" onAction="#tapTest" text="单点测试" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
