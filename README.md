@@ -5,7 +5,7 @@ This Java program controls the micro servo attached to Arduino board via **jSeri
 
 You may choose to get an alert upon task failure/task complete before starting the task in order to get notification without keeping an eye on the game progress. You may also configure all parameters (duration of each round, number of rounds to play, etc) in the application for the best result. 
 
-[[Skip to the GUI Section]](#GUI)
+[[Learn more about the GUI version]](#GUI)
 
 ## Why to use?
 There're lots of auto clicker apps of choice that could do exactly the same job, but you may risk being punished or even banned while you use them as they can be detected. However, this hardware helper behaves naturally like human touching the screen and won't be detected anyway. 
@@ -23,8 +23,44 @@ Quicktime Player
  - Arduino UNO R3
  - A micro servo (SG 90)
  - A stylus pen
- 
- ## OpenCV Installation Guide (only required for developers)
+
+<a name="GUI"></a>
+## GUI for Arduino X Onmyoji
+The graphical user interface is designed and developed using JavaFX and Scene Builder.
+
+### Interface Preview (on Mac)
+1. Configurations before starting the job:
+
+<img alt="Start Job" src="sampleScreenshots/StartJob.png" width="70%">
+
+2. While running the job:
+
+<img alt="Running Jobs" src="sampleScreenshots/RunningJobs.png" width="70%">
+
+### How to use:
+1. Download everything under the [GUI/build](GUI) directory, make sure they stay in the same directory.
+
+2. Cast screen of your mobile device to your computer and place the window to the top-right corner.
+
+3. Take distinct screenshots for game win/lose, rename them as ```Win.jpg/Lose.jpg``` and place them under the imgs folder to define different game status. (Please refer to example images under the [sampleScreenshots](sampleScreenshots) directory).
+
+4. Connect Arduino board to your computer, copy the [Arduino code](arduino/servoCtrl.ino) and upload it to the board via [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+
+5. Connect the micro servo to Arduino board following the instruction diagram below:
+
+<img src="sampleScreenshots/Arduino.png" width="50%">
+
+6. Attach the stylus pen to the servo and adjust it to appropriate position so that it could tap the 'challenge' button easily on your phone.
+
+7. Lock your most reliable 'lineup' for the auto challenge in game.
+
+8. Open ```Onmyoji_x_Arduino.jar```, select Arduino port and connect to it. (the port is auto selected for mac)
+
+9. Configure all the parameters refering to the interface preview above for your best result.
+
+10. Start job and enjoy!
+
+## OpenCV Installation Guide (for development/debugging only)
  1. Install dependencies (Apache Ant, CMake required)
  2. Download opencv extended modules from official Git repo
  3. Access the OpenCV-3.4.1 directory in terminal, type commands:
@@ -50,38 +86,4 @@ Quicktime Player
      ```
      
      The installation process could take about 10 ~ 30 mins.
-   
-   <a name="GUI"></a>
-   ## GUI for Arduino X Onmyoji
-   ### Interface Preview (on Mac)
-   1. Configurations before starting the job:
-   
-   <img alt="Start Job" src="sampleScreenshots/StartJob.png" width="70%">
-   
-   2. While running the job:
-   
-   <img alt="Running Jobs" src="sampleScreenshots/RunningJobs.png" width="70%">
-   
-   ### How to use:
-   1. Download everything under the [GUI/build](GUI) directory, make sure they stay in the same directory.
-   
-   2. Cast screen of your mobile device to your computer and place the window to the top-right corner.
-   
-   3. Take distinct screenshots for game win/lose, rename them as ```Win.jpg/Lose.jpg``` and place them under the imgs folder to define different game status. (Please refer to example images under the [sampleScreenshots](sampleScreenshots) directory).
-   
-   4. Connect Arduino board to your computer, copy the [Arduino code](arduino/servoCtrl.ino) and upload it to the board via [Arduino IDE](https://www.arduino.cc/en/Main/Software).
-   
-   5. Connect the micro servo to Arduino board following the instruction diagram below:
-   
-   <img src="sampleScreenshots/Arduino.png" width="50%">
-   
-   6. Attach the stylus pen to the servo and adjust it to appropriate position so that it could tap the 'challenge' button easily on your phone.
-   
-   7. Lock your most reliable 'lineup' for the auto challenge in game.
-   
-   8. Open ```Onmyoji_x_Arduino.jar```, select Arduino port and connect to it. (the port is auto selected for mac)
-   
-   9. Configure all the parameters refering to the interface preview above for your best result.
-   
-   10. Start job and enjoy!
-   
+
