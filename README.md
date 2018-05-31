@@ -29,7 +29,7 @@ Quicktime Player
 ## GUI for Onmyoji-X-Arduino
 The graphical user interface is designed and developed using JavaFX and Scene Builder.
 
-### Interface Preview (on Mac)
+### Interface Preview (on Mac):
 1. Configurations before starting the job:
 
 <img alt="Start Job" src="sampleScreenshots/StartJob.png" width="70%">
@@ -38,7 +38,7 @@ The graphical user interface is designed and developed using JavaFX and Scene Bu
 
 <img alt="Running Jobs" src="sampleScreenshots/RunningJobs.png" width="70%">
 
-### How to use:
+### Usage:
 1. Download everything under the [GUI/build](GUI) directory, make sure they stay in the same directory.
 
 2. Cast screen of your mobile device to your computer and place the window to the top-right corner.
@@ -60,6 +60,7 @@ The graphical user interface is designed and developed using JavaFX and Scene Bu
 9. Configure all the parameters refering to the interface preview above for your best result.
 
 10. Start job and enjoy!
+
 
 ## OpenCV Installation Guide (for development/debugging only)
  1. Install dependencies (Apache Ant, CMake required)
