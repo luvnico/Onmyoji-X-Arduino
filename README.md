@@ -25,7 +25,8 @@ Quicktime Player
  - A stylus pen
 
 <a name="GUI"></a>
-## GUI for Arduino X Onmyoji
+
+## GUI for Onmyoji-X-Arduino
 The graphical user interface is designed and developed using JavaFX and Scene Builder.
 
 ### Interface Preview (on Mac)
