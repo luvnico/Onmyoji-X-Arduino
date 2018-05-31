@@ -1,11 +1,16 @@
 # Onmyoji-X-Arduino
-A hardware helper using **Arduino UNO R3** combined with CLI for the award winning game **[Onmyoji](https://en.onmyojigame.com/)** on smartphones.
+A hardware helper using **Arduino UNO R3** combined with GUI for the award winning game **[Onmyoji](https://en.onmyojigame.com/)** on smartphones. This helper supports auto challenge for Orochi/Evo Materials/Sougenbi/Totem modes with a list of customized choices.
 
-This Java program controls the micro servo on Arduino board via **jSerialComm** library, recognizes the game status as win/lose at the end of each turn and automatically taps screen to continue playing the next turn when you win the previous turn. If the program fails to find a match for win or lose after a certain period, it'll keep listening for another 30 secs and finally terminates if no match found.
+This Java program controls the micro servo attached to Arduino board via **jSerialComm** library, recognizes the game status as win/lose at the end of each round and automatically taps screen to continue playing the next round when you win the previous one. If the application fails to find a match for win or lose after a certain timeout period, it'll keep listening for another 30 secs and finally terminates if no match found. You may choose to get an alert upon task failure/task complete before starting the task.
 
-You may configure all parameters (turn number, length of period, etc) in ```ThreadEx.java``` for the best result.
+You may configure all parameters (duration of each round, number of rounds to play, etc) in the application for the best result.
 
-[GUI under construction ..]
+[[Skip to GUI Section]](#GUI)
+
+## Why to use?
+There're lots of auto clicker apps of choice that could do exactly the same job, but you may risk being punished or even banned while you use them as they can be detected. However, this hardware helper behaves naturally like human touching the screen and won't be detected anyway. 
+
+Even though Onmyoji has included the auto challenge feature in a recent release, it requires a large consumption of the precious sakuramochi and doesn't support the Totem or Sougenbi mode. 
 
 ## Library Dependencies
 - OpenCV 3.4.1
@@ -19,7 +24,7 @@ Quicktime Player
  - A micro servo (SG 90)
  - A stylus pen
  
- ## OpenCV Installation Guide
+ ## OpenCV Installation Guide (only required for developers)
  1. Install dependencies (Apache Ant, CMake required)
  2. Download opencv extended modules from official Git repo
  3. Access the OpenCV-3.4.1 directory in terminal, type commands:
@@ -45,4 +50,10 @@ Quicktime Player
      ```
      
      The installation process could take about 10 ~ 30 mins.
-     
+   
+   ## GUI <a name="GUI"></a>
+   <img alt="Start Job" src="sampleScreenshots/StartJob.png" width="70%">
+   <img alt="Running Jobs" src="sampleScreenshots/RunningJobs.png" width="70%">
+   
+   
+   
