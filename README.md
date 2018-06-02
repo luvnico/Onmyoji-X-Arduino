@@ -41,7 +41,7 @@ The graphical user interface is designed and developed using JavaFX and Scene Bu
 ### Usage:
 1. Download everything under the [GUI/build](GUI) directory, make sure they stay in the same directory.
 
-2. Cast screen of your mobile device to your computer and place the window to the top-right corner.
+2. Cast screen of your mobile device to your computer and place the window to the top-left corner.
 
 3. Take distinct screenshots for game win/lose, rename them as ```Win.jpg/Lose.jpg``` and place them under the imgs folder to define different game status. (Please refer to example images under the [sampleScreenshots](sampleScreenshots) directory).
 
